@@ -1,108 +1,194 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>My Portfolio</title>
-</head>
-<body>
+  </head>
+
+  <body>
     <header>
-    <img src="images/logo.png" alt="logo" width="80">
-    <nav>
+      <div class="header-container">
+      <div class="logo">
+      <img src="images/logo.png" alt="Portfolio Logo" width="80" />
+      </div>
+
+      <h1>Srijana Yadav</h1>
+
+      <nav>
         <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
-        <form>
-            <input type="text" placeholder="search">
-            <button type="Submit">Search</button>
+        <div class="search bar"></div>
+        <form action="#">
+          <input type="search" id="search" name="search" placeholder="Search" />
         </form>
-    </nav>
-    <hr>
+        </div>
+      </nav>
+
+      <hr />
     </header>
 
     <main>
-        <section id="about">
-        <h1>About Me</h1>
-        <p>
-I am Srijana Yadav, an aspiring Web Developer with a passion for building responsive and user-friendly websites. I have knowledge of HTML, CSS, JavaScript, React, WordPress, and .NET. I enjoy learning new technologies, solving problems, and improving my skills through practical projects. My goal is to develop high-quality web applications, contribute to innovative teams, and continuously grow as a professional in the field of web development.
-        </p>
-        <img src="images/photo.jpg" alt="Iron man" width="200">
-        </section>
+      <!-- About Section -->
 
-         <section id="skills">
-            <h2>My Skills</h2>
+      <section id="about">
+        <h2>About Me</h2>
 
-            <dl>
-                <dt>Programming Language</dt>
-                <dd>java, python, js, c# </dd>
+        <div class="about">
+          <div class="about-text">
+            <p>
+              I am Srijana Yadav, an aspiring Web Developer with a passion for
+              building responsive and user-friendly websites. I have knowledge
+              of HTML, CSS, JavaScript, React, WordPress, I enjoy
+              learning new technologies, solving problems, and improving my
+              skills through practical projects. My goal is to develop
+              high-quality web applications, contribute to innovative teams, and
+              continuously grow as a professional in web development.
+            </p>
+          </div>
 
-                <dt>Frameworks</dt>
-                <dd>asp.dotnet angular, blazor</dd>
+          <div class="about-image">
+            <img
+              src="images/photo.jpg"
+              alt="Profile picture of Srijana Yadav"
+              width="200"
+            />
+          </div>
+        </div>
+      </section>
 
-                <dt>Databases</dt>
-                <dd>MySQL, mongoDb, oracle</dd>
+      <!-- Skills Section -->
 
-                <dt>Tools</dt>
-                <dd>word, excel, powerPoint, Visual studio</dd>
-            </dl>
-        </section>
+      <!-- Skills Section -->
+      <section id="skills">
+        <h2>My Skills</h2>
 
-        <section id="projects">
-            <h1>Projects</h1>
-            <article>
-                <h3>Object Detection System</h3>
-                <p>I have created a application that corectly detect multiple object</p>
-                <p> <a href="https://github.com/" target="_blank">Click here to view website</a></p>
-                </article>
+        <div class="skills">
+          <div class="skill-box">
+            <h3>Programming Languages</h3>
+            <p>Java, Python, JavaScript, C#</p>
+          </div>
 
-                <article>
-                    <h3>Personal portfilo website</h3>
-                <p>A responsive personal portfolio created using HTML5 and CSS to showcase my education, skills, and projects. </p>
-                <p> <a href="https://github.com/" target="_blank">Click here to view website</a></p>
-                </article>
+          <div class="skill-box">
+            <h3>Frameworks</h3>
+            <p>ASP.NET, Angular, Blazor</p>
+          </div>
 
-            <section id="contact">
-            <h2>Contact</h2>
-            <form action="#" method="post">
-                <p>
-                    <label for="name">Name:</label><br>
-                    <input type="text"
-                           id="name"
-                           name="name"
-                           required>
-                </p>
-                <p>
-                    <label for="email">Email:</label><br>
-                    <input type="email"
-                           id="email"
-                           name="email"
-                           required>
-                </p>
-                <p>
-                    <label for="message">Message:</label><br>
-                    <textarea id="message"
-                              name="message"
-                              rows="5"
-                              cols="40"
-                              required></textarea>
-                </p>
-                <p>
-                    <button type="submit">Submit</button>
-                </p>
-            </form>
-        </section>
-        <img src="images/facebook logo.png" alt="Iron man" width="30">
-        <img src="images/instagram logo.png" alt="Iron man" width="30">
-        <img src="images/linkedinlogo.png" alt="Iron man" width="30">
-        <img src="images/whatapp logo.png" alt="Iron man" width="30">
-        <hr>
+          <div class="skill-box">
+            <h3>Databases</h3>
+            <p>MySQL, MongoDB, Oracle</p>
+          </div>
+
+          <div class="skill-box">
+            <h3>Tools</h3>
+            <p>Microsoft Word, Excel, PowerPoint, Visual Studio</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+
+      <section id="projects">
+        <h2>Projects</h2>
+
+        <div class="project">
+          <article>
+            <h3>Student Management System</h3>
+            <p>
+              Built a full-stack Student Management System (React, Node.js,
+              Express.js, MongoDB) enabling users to add, update, search, and
+              delete student records via a responsive web interface, with
+              RESTful APIs powering data management on the backend.
+            </p>
+
+            <a
+              href="https://github.com/shrijana2062/Project_Sipalaya.git"
+              target="_blank"
+            >
+              View GitHub Repository
+            </a>
+          </article>
+
+          <article>
+            <h3>Personal Portfolio Website</h3>
+            <p>Developed a personal portfolio website using semantic HTML5.</p>
+
+            <a
+              href="https://github.com/shrijana2062/My-Portifilo.git"
+              target="_blank"
+            >
+              View GitHub Repository
+            </a>
+          </article>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+
+      <section id="contact">
+        <div class="contact container"></div>
+        <h2>Contact Me</h2>
+
+        <form action="#" method="post">
+          <p>
+            <label for="name">Name:</label><br />
+            <input type="text" id="name" name="name" required />
+          </p>
+
+          <p>
+            <label for="email">Email:</label><br />
+            <input type="email" id="email" name="email" required />
+          </p>
+
+          <p>
+            <label for="message">Message:</label><br />
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              cols="40"
+              required
+            ></textarea>
+          </p>
+
+          <p>
+            <button type="submit">Submit</button>
+          </p>
+        </form>
+
+       <h3>Connect with Me</h3>
+
+<p>
+  <!-- Facebook -->
+  <a href="https://www.facebook.com/yourusername" target="_blank" rel="noopener noreferrer">
+    <img src="images/facebook-logo.png" alt="Facebook Logo" width="30" />
+  </a>
+
+  <!-- Instagram -->
+  <a href="https://www.instagram.com/yourusername" target="_blank" rel="noopener noreferrer">
+    <img src="images/instagram-logo.png" alt="Instagram Logo" width="30" />
+  </a>
+
+  <!-- LinkedIn -->
+  <a href="https://www.linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">
+    <img src="images/linkedin-logo.png" alt="LinkedIn Logo" width="30" />
+  </a>
+
+  <a href="https://wa.me/97798XXXXXXXX" target="_blank" rel="noopener noreferrer">
+    <img src="images/whatapp-logo.png" alt="WhatsApp Logo" width="30" />
+  </a>
+</p>
+
+      <hr />
     </main>
+
     <footer>
-        <p>&copy; 2026 My Portfolio. All rights reserved.</p>
+      <p>&copy; 2026 Srijana Yadav. All Rights Reserved.</p>
     </footer>
-</body>
+  </body>
 </html>
